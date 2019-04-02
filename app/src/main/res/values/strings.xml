@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IBA</string>
+
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_your_password">Forget your password</string>
+    <string name="have_no_account">Don`t have an account? Sign up</string>
+    <string name="example_email_com">example@email.com</string>
+    <string name="example_password">********</string>
+
+    <string name="register">REGISTER</string>
+    <string name="sign_up">SIGNUP</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="have_account">Already have an account? Sign in</string>
+    <string name="example_name">John Doe</string>
+    <string name="example_number">8129*****</string>
+
+    <string name="start">START</string>
+</resources>
