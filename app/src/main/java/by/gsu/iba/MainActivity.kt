@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             loginFragmentTransaction.replace(R.id.container, loginFragment).commitNow()
             //registerFragmentTransaction.replace(R.id.container, registerFragment).commitNow()
         }
+
     }
 
 }
