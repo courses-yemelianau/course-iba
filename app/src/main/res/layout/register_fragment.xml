@@ -3,7 +3,9 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
     <data>
+        <variable name="rf" type="by.gsu.iba.ui.main.RegisterFragment">
 
+        </variable>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/register"
@@ -14,7 +16,7 @@
         <TextView
                 android:id="@+id/registerTextView"
                 android:text="@string/register"
-                android:textColor="@color/colorBlue"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="32sp"
                 android:textStyle="bold"
 
@@ -31,7 +33,7 @@
         <TextView
                 android:id="@+id/registerSignUpTextView"
                 android:text="@string/have_account"
-                android:textColor="@color/colorBlue"
+                android:textColor="@color/colorPrimaryDark"
 
                 android:clickable="true"
                 android:focusable="true"

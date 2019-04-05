@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
     private var registerFragmentTransaction = registerFragmentManager.beginTransaction()
     private var registerFragment = RegisterFragment()
 
+    private var buf = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             //registerFragmentTransaction.replace(R.id.container, registerFragment).commitNow()
         }
 
+        //var lfr = supportFragmentManager.findFragmentById(R.id.login)
+        //var rfr = supportFragmentManager.findFragmentById(R.id.register)
     }
 
 }

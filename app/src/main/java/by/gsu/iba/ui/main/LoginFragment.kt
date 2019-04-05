@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import by.gsu.iba.R
-import kotlinx.android.synthetic.main.login_fragment.*
 
 class LoginFragment : Fragment() {
 
