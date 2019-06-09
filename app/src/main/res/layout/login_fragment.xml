@@ -61,7 +61,6 @@
             android:layout_marginRight="@dimen/spacing_xlarge"
             android:layout_marginLeft="@dimen/spacing_xlarge"
             android:layout_marginStart="@dimen/spacing_xlarge"
-            android:layout_marginTop="@dimen/spacing_large"
 
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
@@ -87,7 +86,6 @@
             android:layout_marginEnd="@dimen/spacing_xlarge"
             android:layout_marginLeft="@dimen/spacing_xlarge"
             android:layout_marginStart="@dimen/spacing_xlarge"
-            android:layout_marginBottom="@dimen/spacing_large"
 
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
             app:layout_constraintBottom_toTopOf="@+id/materialButton"
