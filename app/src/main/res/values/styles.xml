@@ -1,11 +1,35 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/mediumBlue</item>
+    </style>
+
+    <style name="Fragment">
+        <item name="android:background">@color/lightBlue</item>
+    </style>
+
+    <style name="LowercaseText">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="UppercaseText" parent="LowercaseText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_spacing_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="UnderButtonText" parent="LowercaseText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:paddingBottom">@dimen/spacing_small</item>
+    </style>
+
+    <style name="TextInputLayoutPassword" parent="TextInputLayout">
+        <item name="passwordToggleEnabled">true</item>
     </style>
 
 </resources>

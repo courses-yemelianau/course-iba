@@ -7,27 +7,30 @@ import by.gsu.iba.ui.main.RegisterFragment
 
 class MainActivity : AppCompatActivity() {
 
-    private var loginFragmentManager = supportFragmentManager
-    private var loginFragmentTransaction = loginFragmentManager.beginTransaction()
-    private var loginFragment = LoginFragment()
-
-    private var registerFragmentManager = supportFragmentManager
-    private var registerFragmentTransaction = registerFragmentManager.beginTransaction()
-    private var registerFragment = RegisterFragment()
-
-    private var buf = 0
+    private val loginFragment = LoginFragment.newInstance()
+    private val registerFragment = RegisterFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-        if (savedInstanceState == null) {
-            loginFragmentTransaction.replace(R.id.container, loginFragment).commitNow()
-            //registerFragmentTransaction.replace(R.id.container, registerFragment).commitNow()
-        }
+        supportFragmentManager.beginTransaction().add(R.id.container, loginFragment).commitNow()
 
-        //var lfr = supportFragmentManager.findFragmentById(R.id.login)
-        //var rfr = supportFragmentManager.findFragmentById(R.id.register)
+        /*loginFragment.textView3.setOnClickListener {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container, registerFragment)
+                .addToBackStack("flags")
+                .commitNow()
+        }*/
+
+        /*registerFragment.textView2.setOnClickListener {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container, loginFragment)
+                .addToBackStack("flags")
+                .commitNow()
+        }*/
     }
 
 }
